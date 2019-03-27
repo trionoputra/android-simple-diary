@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e1675a</color>
+    <color name="colorPrimaryDark">#e1675a</color>
+    <color name="colorAccent">#e1675a</color>
+    <color name="colorPrimaryDark2">#df5749</color>
+    <color name="bg_default">#363d45</color>
+    <color name="item">#000</color>
+    <color name="putih">#fff</color>
+    <color name="putih_transparan">#99ffffff</color>
+    <color name="item_transparan">#11000000</color>
+    <color name="item_transparan2">#aa000000</color>
+    <color name="abuabu">#9d9d9d</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

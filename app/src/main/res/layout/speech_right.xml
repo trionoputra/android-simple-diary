@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:gravity="center|right"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/speechWrapper"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/emojiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:textColor="@color/putih"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="input your text ada jhdjkas hdkjsa hdjsak hdakjs hdkjsa hdkjsa hdkjsa hdkjsa hdkjsa hdkjsa hdkjsa hdkjsa hdsakj hdsaj hdkjsah dkjsadkjsahd"
+            android:textSize="16sp"
+            emojicon:emojiconSize="16sp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:srcCompat="@mipmap/callout_right" />
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+        android:id="@+id/emojiTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:text=""
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textSize="35dp"
+        emojicon:emojiconSize="35sp"/>
+
+</LinearLayout>

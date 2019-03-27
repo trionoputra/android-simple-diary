@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/speechLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/rounded_layout_pink"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center"
+        android:id="@+id/mainDialog"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@color/putih">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/bottomWrapper"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="@color/bg_default"
+                        android:text="SURE ?" />
+
+                </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/bottomWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:background="@color/bg_default"
+                android:gravity="right|center_vertical"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/putih"
+                    android:background="@drawable/btn_save"
+                    android:textSize="16dp"
+                    android:text="OK" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/putih"
+                    android:background="@drawable/btn_save"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16dp"
+                    android:text="CANCEL" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

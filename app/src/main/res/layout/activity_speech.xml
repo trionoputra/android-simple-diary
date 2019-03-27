@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_transparan2"
+    android:id="@+id/speechLayout">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_layout_pink"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/mainDialog"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/putih">
+
+            <ScrollView
+                android:id="@+id/scrollDiaryWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/actionWrapper"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:padding="6dp"
+                    android:weightSum="1">
+
+                    <com.yondev.diary.widget.SpeechLayout
+                        android:id="@+id/SpeechLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/actionWrapper"
+                android:layout_above="@+id/bottomWrapper"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:gravity="right|center_vertical"
+                android:layout_height="wrap_content">
+
+
+                <ImageButton
+                    android:id="@+id/btnImoji2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_state"
+                    emojicon:srcCompat="@drawable/emoji_people" />
+
+                <ImageButton
+                    android:id="@+id/btnFlip"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="8dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_state"
+                    emojicon:srcCompat="@mipmap/ic_flip" />
+
+                <ImageButton
+                    android:id="@+id/btnColor"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="8dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_state"
+                    emojicon:srcCompat="@mipmap/ic_color" />
+
+                <ImageButton
+                    android:id="@+id/btnDelete"
+                    android:visibility="gone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/icon_state"
+                    app:srcCompat="@android:drawable/ic_menu_delete" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:background="@color/bg_default"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnImoji"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@mipmap/emoji_people_w"
+                    android:layout_marginLeft="8dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/titleTextWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:paddingLeft="6dp"
+                    android:layout_weight="1"
+                    android:paddingRight="6dp"
+                    android:background="@drawable/rounded_layout">
+
+                    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                        android:id="@+id/txtContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:textSize="16sp"
+                        android:background="@color/putih"
+                        android:inputType="textPersonName|textNoSuggestions"
+                        android:hint="input your text"
+                        android:focusable="true"
+                        android:text=""
+                        android:focusableInTouchMode="true"
+                        emojicon:emojiconSize="26sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/putih"
+                    android:background="@drawable/btn_save"
+                    android:textSize="16dp"
+                    android:text="DONE" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

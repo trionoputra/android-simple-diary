@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/emojiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textSize="50dp"
+            emojicon:emojiconSize="50dp"/>
+
+    	<TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/emojiTextView"
+        android:layout_toRightOf="@+id/emojiTextView"
+        android:textSize="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-5dp"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:text="" />
+    	
+    	    
+    
+    
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/emojiTextView"
+            android:layout_below="@+id/textView3"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp" >
+			
+            <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dp"
+                    android:src="@mipmap/arrow_title" />
+            
+            <RelativeLayout
+                android:id="@+id/titleWrapper"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/title"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp" >
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp"
+                    android:textColor="#fff"
+                    emojicon:emojiconSize="12dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/titleWrapper"
+                android:layout_below="@+id/titleWrapper"
+                android:background="@mipmap/content"
+                android:layout_marginLeft="1dp"
+                android:padding="8dp" >
+
+                <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#505b61"
+                    android:text=""
+                    emojicon:emojiconSize="12dp"/>
+                
+        	</RelativeLayout>
+        </RelativeLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="1dip"
+        android:layout_height="10dp"
+        android:layout_alignLeft="@+id/emojiTextView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:background="#59636d" />
+    
+
+    
+    </RelativeLayout>
+	
+    
+     <View
+        android:id="@+id/separator2"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:background="#59636d" />
+
+</FrameLayout>

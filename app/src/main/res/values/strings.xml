@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Diary Ku</string>
+    <string name="add_title">add title</string>
+    <string name="start_typing">start typing here...</string>
+    <string name="tap_again_to_exit">Tap BACK again to exit</string>
+
+    <string name="title_activity_preview">PreviewActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2804081175309116/2621025383</string>
+    <string name="admob_interstitial_id">ca-app-pub-2804081175309116/4097758588</string>
+</resources>

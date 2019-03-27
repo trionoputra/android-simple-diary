@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+xmlns:android="http://schemas.android.com/apk/res/android" xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+android:id="@+id/txtContent"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@null"
+android:ems="10"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:gravity="top|left"
+android:inputType="textMultiLine|textNoSuggestions"
+android:tag="content"
+android:layout_weight="1"
+android:textSize="20sp"
+emojicon:emojiconSize="26sp" />
