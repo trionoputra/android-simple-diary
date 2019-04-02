@@ -4,8 +4,8 @@
 
 Simple Diary Application for Android with Emoji and Timeline View
 
-<img src="slide1.jpg" width="400" alt="deardiary"></a>
-<img src="slide2.jpg" width="400" alt="deardiary"></a>
+<img src="slide1.jpg" width="400" alt="deardiary"></img>
+<img src="slide2.jpg" width="400" alt="deardiary"></img>
 
 #### libs
 * [SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji)
